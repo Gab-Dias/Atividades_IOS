@@ -1,0 +1,103 @@
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    
+}
+
+header {
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(157, 157, 157);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header a {
+    font-size: 2em;
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+ul {
+    width: 100%;
+}
+
+nav > a:hover {
+    background-color: rgb(103, 103, 103);
+    text-decoration: underline;
+    transition: all .3s;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.lista-ambos {
+    width: 400px;
+    height: 600px;
+    background-color: rgb(198, 221, 220);
+    overflow: hidden;
+    border-radius: 0 0 15px 15px;
+}
+
+.lista-ambos-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+h1 {
+    margin-left: 22px;
+    font-size: 2em;
+    
+}
+
+.lista-ambos-ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.lista-ambos-ul li a:hover {
+    text-decoration: underline;
+    
+
+}
+
+footer {
+    margin-top: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
