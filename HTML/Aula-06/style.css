@@ -1,0 +1,82 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: aquamarine;
+}
+
+main {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+table {
+    
+    background-color: aliceblue;
+    font-size: 1.2em;
+    overflow: hidden;
+    
+}
+
+tr, th, td {
+    border: 1px solid black;
+    
+}
+
+th, td {
+    padding: 4px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background-color: bisque;
+    margin-bottom: 1em; 
+}
+
+.tabela-2 td {
+    background-color: bisque;
+
+}
+
+.tabela-2 tr {
+    background-color: rgba(165, 42, 42, 0.87);
+}
+
+.tabela-2 {
+    background-color: rgba(240, 248, 255, 0);
+    animation: mexer 6s linear infinite alternate;
+}
+
+@keyframes mexer {
+
+    0% { 
+        transform: translateX(0);
+
+    }
+
+    50% {
+
+        transform: translateX(150px);
+
+    }
+
+    100% {
+        transform: translateX(-200px);
+    }
+    
+}
