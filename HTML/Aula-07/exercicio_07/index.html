@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+    <header>
+       <ul>
+        <li>Form</li>
+        <li>Radio</li>
+        <li>CheckBox</li>
+        <li>Select</li>
+        <li>DataList</li>
+        <li>TextArea</li>
+       </ul>
+
+    </header>
+
+    <main>
+           <form action="#">
+            <h2>Preenchar o formulairo abaixo</h2>
+
+                <section class="sect-1">
+                    <fieldset>
+                        <legend>Sexo:</legend>
+                        <label for="masculino"> Masculino
+                            <input type="radio" name="genero" id="masculino">
+                        </label>
+                        <label for="feminino"> Feminino
+                            <input type="radio" name="genero" id="feminino">
+                        </label>
+                    </fieldset>
+                </section>
+               
+                <section class="sect-2">
+                    <fieldset>
+                        <legend> Estilos Músicas Preferidos:</legend>
+                       
+                        <label for="l-rock">
+                            <input type="checkbox" name="" id="l-rock">Rock
+                        </label>
+                        <label for="l-funk">
+                            <input type="checkbox" name="" id="l-funk">Funk
+                        </label>
+                        <label for="l-serta">
+                            <input type="checkbox" name="" id="">Sertanejo
+                        </label>
+                        <label for="l-pop">
+                            <input type="checkbox" name="" id="l-pop">POP
+                        </label>
+                        <label for="l-forro">
+                            <input type="checkbox" name="" id="l-forro">Forró
+                        </label>
+                        <label for="l-eletro">
+                            <input type="checkbox" name="" id="l-eletro">Eletrônica
+                        </label>
+                        <label for="l-inter">
+                            <input type="checkbox" name="" id="l-inter">Internacional
+                        </label>
+                    </fieldset>
+                  
+                    
+                </section>
+
+                <section class="sect-3">
+                    <label for="i-cor">
+                        <p>Cor favorita:</p>
+                    </label>
+                    <select name="cor" id="i-cor">
+                        <option value="az">Azul</option>
+                        <option value="ve">Vermelho</option>
+                        <option value="ro">Rosa</option>
+                        <option value="gr">Verde</option>
+                        <option value="am">Amarelo</option>
+                        <option value="pr">Preto</option>
+                        <option value=br">Branco</option>
+                        <option value="la">Laranja</option>
+                    </select>
+                </section>
+
+                <section class="sect-4">
+                    Qual Unidade da IOS mais perto de você?
+                    <input type="text" name="" id="tex" list="lista-unidades">
+                    <datalist id="lista-unidades">
+                        <option value="Santana"></option>
+                        <option value="Itaquera"></option>
+                        <option value="Jardim Ângela"></option>
+                        <option value="Santo Amaro"></option>
+                        <option value="Diadema"></option>
+                        <option value="Hortolândia"></option>
+                        <option value="Barueri"></option>
+                        <option value="Rio de Janeiro - Faculdade UNISUAM "></option>
+                        <option value="Rio de Janeiro - UCB"></option>
+                        <option value="Belo Horizonte - Unidade Barreiro"></option>
+                        <option value="Belo Horizonte - Unidade São Gabriel           "></option>
+                        <option value="Pernambuco - Recife"></option>
+                        <option value="Paraná - Curitiba"></option>
+                        <option value="Rio Grande do Sul - Porto Alegre"></option>
+                    </datalist>
+                    
+                </section>
+
+                <section class="sect-5">
+        
+                    <p>Alguma obeservação?</p>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Digite algo"></textarea>
+
+                </section>
+
+            
+
+               
+
+                    <section class="button">
+                        <input type="reset" value="Limpar">
+                        <input type="submit" value="Enviar">
+                    </section>
+                
+
+            
+        </form>
+
+    </main>
+
+    <footer>
+        &copy;Gabriel V Dias
+    </footer>
+    
+</body>
+</html>
