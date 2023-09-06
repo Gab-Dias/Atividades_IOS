@@ -5,3 +5,53 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body, main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #387373;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    text-align: justify;
+    margin: 1em 0 1em 0;
+}
+
+section {
+    padding: 2em;
+    width: 500px;
+    height: 700px;
+    background-color: #93BFB7;
+    border-radius: 5px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.226);
+}
+
+/* Selecionando os filhos direto do UL */
+
+ul :nth-child(2) {
+    font-weight: 700;
+}
+
+ul :nth-child(3) {
+    font-style: italic;
+}
+
+ul :nth-child(4) {
+    line-height: normal;
+}
+
+ul :nth-child(5) {
+    text-align: left;
+}
+
+ul :nth-child(6) {
+    text-indent: 10px;
+}
+
+ul :nth-child(7) {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.699);
+}
