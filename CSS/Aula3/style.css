@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body, main {
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(189, 189, 189);
+}
+
+section {
+    font-size: 2rem;
+    width: 100rem;
+    height: 60rem;
+    background-color: rgb(209, 208, 208);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+p, h1 {
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.primeiro, .terceiro {
+    background-color: aquamarine;
+}
+
+.segundo {
+    background-color: beige;
+}
+
+.className {
+    color: blue;
+}
