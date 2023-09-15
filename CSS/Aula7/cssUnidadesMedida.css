@@ -22,9 +22,9 @@ section {
     flex-direction: column;
     width: 500px;
     height: 600px;
-    padding: 0 20px;
+    padding: 0 0.2cm;
     background-color: rgba(0, 0, 0, 0.24);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(.04in);
     color: white;
     border: 2px solid rgba(255, 255, 255, 0.486);
     border-radius: 10px;
