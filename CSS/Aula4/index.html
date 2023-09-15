@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Selectores</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Q
+            uis officiis, harum sunt non unde quia alias voluptatibus
+        tenetur nobis possimus cum? Rerum quod explicabo animi sint nobis temporibus! Quia, vel?</p>
+
+        <article>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias beatae iusto voluptatem voluptas at necessitatibus aut accusamus repudiandae excepturi odio sunt esse corporis, minima quasi expedita, facere, unde ullam dolor! Lorem, ipsum dolor sit amet consectetur adipisicing elit.Possimus laudantium ipsam voluptatibus quis magni animi similique libero reprehenderit maxime iure exercitationem, fuga dolorum soluta! Ipsam nostrum quae commodi nam dignissimos.</p>
+
+            <p>Alias explicabo beatae error facere nihil fuga cumque debitis voluptatem ut adipisci id voluptas nemo voluptatibus optio doloremque consequuntur quasi dolores, qui vel necessitatibus ducimus numquam quod, iure non! Quod!Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, cumque quasi quod nulla recusandae modi suscipit esse veritatis ab velit error earum sed eius nam sit reiciendis, quidem ratione vel!</p>
+
+            <p>Voluptatibus ratione repudiandae dolor quas error a dolores ipsa nesciunt. Voluptatem deserunt iste velit suscipit qui officiis. Architecto, excepturi! Debitis dicta quis maiores. Eaque, illo ducimus. Provident ducimus libero similique. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quod ratione asperiores, odio, dolores est quidem et soluta autem iusto, esse ut. Eligendi, sint laboriosam! Eos esse dolor quidem accusamus!</p>
+            <input type="number" name="num1" id="num1"> Digite um valor  <br>
+            <input type="number" name="num2" id="num2"> Digite outro Valor
+            <input type="button" value="Botão" onclick="Somar()">
+            <div id="resultado">Resultado:</div>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script>
+
+        function Somar() {
+            let num1 = document.querySelector('#num1');
+            let num2 = document.querySelector('#num2');
+            let resultado = document.querySelector('#resultado');
+
+            num1 = Number(num1.value);
+            num2 = Number(num2.value);
+
+            let soma = num1 + num2;
+
+            // window.alert(`O resultado foi ${soma} e você é gay`)
+
+            resultado.innerHTML = `A soma de ${num1} mais ${num2} é igual ${soma}` 
+
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
