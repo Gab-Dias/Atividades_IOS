@@ -22,11 +22,11 @@ p {
     color: var(--corPrimaria);
 }
 
-@media screen and (max-width: 600px) {
-    
-    body, p{
-            width: 50vw;
-            color: var(--corWhite);
+@media screen and (min-width: 600px) and (max-width:800px) {
+
+    body, p {
+            width: 70vw;
+            color: var(--corSec);
         }
     
 }
