@@ -40,6 +40,7 @@ body {
     padding: 1rem 1rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    background-color: antiquewhite;
     
 }
 
@@ -47,4 +48,81 @@ body {
     width: 75px;
     height: 50px;
     border: 1px solid black;
+}
+
+.container-grid2 {
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.grid2 {
+    width: 75px;
+    height: 50px;
+    border: 1px solid black;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    
+    
+}
+
+.container-grid3 {
+    background-color: rgb(210, 253, 165);
+    display: grid;
+}
+
+
+.grid3 {
+    width: 75px;
+    height: 50px;
+    border: 1px solid black;
+    grid-area: a;
+}
+
+.grid3 {
+    width: 75px;
+    height: 50px;
+    border: 1px solid black;
+    grid-area: b;
+}
+
+.container-grid4 {
+    background-color: rgb(147, 147, 250);
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid4 {
+    width: 75px;
+    height: 50px;
+    border: 1px solid black;
+    justify-self: end;
+    
+}
+
+.container-grid5 {
+    background-color: rgb(147, 245, 250);
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid5 {
+    width: 75px;
+    height: 50px;
+    border: 1px solid black;
+    justify-self: end;
+    align-self: flex-end;
+
+}
+
+.container-grid6 {
+    background-color: rgb(250, 147, 168);
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid6 {
+    width: 75px;
+    height: 50px;
+    border: 1px solid black;
+    place-self: center start;
+
 }
