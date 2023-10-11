@@ -14,5 +14,7 @@ console.log(alfabeto)
 
  console.log(alfabeto.substring(1, 4)) // Pega o intervalo de 1 ao 4, começa no 1 e acaba no 3, ele desconsidera o 4. 
 
+ var amigos = "ninguem"
+
 
 
