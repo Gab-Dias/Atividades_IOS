@@ -1,4 +1,4 @@
-function calcular() {
+function calcular(){
   let altura = Number(document.querySelector("#altura").value);
   let peso = Number(document.querySelector("#peso").value);
   let resultado = document.querySelector("#res");
