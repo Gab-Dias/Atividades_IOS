@@ -12,13 +12,13 @@ let alunos = [
     nome: "Gabriel",
     sobrenome: "Dias",
     idade: "24",
-    endereço: {
+    endereco: {
       rua: "Av Parada Pinto",
       numero: 737,
       cidade: "São Paulo",
       estado: "São Paulo",
     },
-    notas: [8, 7, 10, 9],
+    notas: [10, 9, 10, 10],
     nacionalidade: "Brasileiro",
     faltas: 2,
     renda: "baixa",
@@ -28,13 +28,13 @@ let alunos = [
     nome: "Pietro",
     sobrenome: "Abrahamian",
     idade: "16",
-    endereço: {
-      rua: "Av Parada Pinto",
-      numero: 737,
+    endereco: {
+      rua: "Rua dos palmares",
+      numero: 732,
       cidade: "São Paulo",
       estado: "São Paulo",
     },
-    notas: [8, 7, 10, 9],
+    notas: [8, 9, 10, 9],
     nacionalidade: "Brasileiro",
     faltas: 2,
     renda: "baixa",
@@ -44,13 +44,13 @@ let alunos = [
     nome: "Beijamim",
     sobrenome: "Rodrigues",
     idade: "17",
-    endereço: {
-      rua: "Av Parada Pinto",
-      numero: 737,
+    endereco: {
+      rua: "Av Rio Branco",
+      numero: 37,
       cidade: "São Paulo",
       estado: "São Paulo",
     },
-    notas: [8, 7, 10, 9],
+    notas: [8, 7, 10, 7],
     nacionalidade: "Brasileiro",
     faltas: 2,
     renda: "baixa",
@@ -58,9 +58,24 @@ let alunos = [
 ];
 
 
-// vai percorrer os 3 alunos
+// vai percorrer os 3 objetos dentro de alunos
 for (let i of alunos ){
+  let media = 0;
 
-  console.log(`Aluno com o nome ${i.nome}`)
+  // let n vai percorrer dentro do array notas que ta dentro do objetos
+  for (let n of i.notas) {
+    media += n;
+  }
 
+  let mediaSoma = media / 4;
+
+  if (mediaSoma >= 7) {
+    console.log(
+      `Aluno com o nome ${i.nome}, que mora em ${i.endereco.rua}, tem a média de ${mediaSoma}, portando foi aprovado`
+    );
+  } else {
+    console.log(
+      `Aluno com o nome ${i.nome}, que mora em ${i.endereco.rua}, tem a média de ${mediaSoma}, portando foi reprovado`
+    );
+  }
 }
