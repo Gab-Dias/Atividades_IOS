@@ -57,9 +57,10 @@ let alunos = [
   },
 ];
 
-console.log(alunos[2].notas[1])
 
+// vai percorrer os 3 alunos
+for (let i of alunos ){
 
-for (let i = 0; i <= 4 ; i++ ) {
-  
+  console.log(`Aluno com o nome ${i.nome}`)
+
 }
