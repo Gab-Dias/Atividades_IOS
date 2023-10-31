@@ -20,7 +20,25 @@ return (console.log(`${funcionarios.nome} com salario de ${funcionarios.salario}
 let reajusteSalarial = nomesFuncionario.map((funcionarios) => {
     return funcionarios.salario * 1.05 
 })
+
+
 console.log(reajusteSalarial)
+
+
+// Filtro
+let filtroSalarial = nomesFuncionario.filter((salario) => {
+  return salario.salario > 5000;
+});
+console.log(`Os funcionários que possuem salário maior do que 5000 reais são:`);
+console.log(filtroSalarial);
+
+
+// Find
+let cadeWally = nomesFuncionario.find((procura) => {
+  return procura.nome === "Wally";
+});
+
+console.log(cadeWally);
 
 
 
